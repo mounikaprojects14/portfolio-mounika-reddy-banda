@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0ade8cdb11.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/name.png" class="name">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>GCP Data Engineer</p>
+                <h1>Hi, I'm <span>Mounika Reddy</span><br>From United States</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------about-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/u1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Actively seeking for summer'24 internships. Experienced data engineer with 4 years of IT experience in Google Cloud Platform, certified as a Google Cloud Professional Data Engineer, Associate Cloud Engineer, and Google Cloud Digital Leader. Proficient in big data technologies including Hadoop, Spark, and NoSQL databases like HBase. Skilled in Google Cloud services like BigQuery, Composer, Cloud Storage, and Azure Cloud IoT. Experienced in Apache Spark, Python, Dataflow, Cloud Functions, DataPrep, Databricks, and API handling.Strong project-based teamwork and communication skills.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Google Cloud Platform</span><br>BigQuery, Cloud Storage, Cloud Composer, Dataflow,
+                                DataPrep.</li>
+                            <li><span>Other Clouds</span><br>Microsoft Azure.</li>
+                            <li><span>Big Data Ecosystems</span><br>Hadoop HDFS, Hive, Sqoop, Spark Core, Spark SQL.
+                            </li>
+                            <li><span>Databases</span><br>Oracle, PostgreSQL, MySQL.</li>
+                            <li><span>NOSQL Databases</span><br>HBase, Bigtable.</li>
+                            <li><span>Programming Language</span><br>Python, SQL, SCALA.</li>
+                            <li><span>Other Tools</span><br>IntelliJ IDEA, PyCharm, Visual Studio.</li>
+                            <li><span>Operating Systems</span><br>Linux, Windows.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>United Parcel Service (UPS) | IBM Aug 2022 – Aug 2023</span><br>Project Title : United Parcel Service.<br> Environment : BigQuery, Cloud Storage, Kubernetes, Jenkins, SQL, GIT. <br>Role : GCP Data Engineer.
+                            </li>
+                            <li><span>Ericsson | IBM Feb 2022 – July 2022</span><br>Project Title	: Ericsson.
+                                <br>Environment	: BigQuery, Cloud Storage, Dataflow, SQL, GIT.
+                                <br>Role		: GCP Data Engineer.
+                            </li>
+                            <li><span>Royal Mail Group | Accenture Jan 2021 – Jan 2022</span><br>Project Title	: Royal Mail Group.
+                                <br>Environment	: BigQuery, Cloud Storage, Cloud Composer, Shell Script, Python, GIT.
+                                <br>Role		: GCP Data Engineer.
+                            </li>
+                            <li><span>Macys  | Datametica July 2020 – Dec 2020</span><br>Project Title	: Hadoop Main Migration.
+                                <br>Environment	: BigQuery, Cloud Storage, Composer, Infoworks, Hive, Flume, Shell Script, Python.
+                                <br>Role		: GCP Data Engineer.</li>
+                            <li><span>Humana | Datametica Jan 2020 – June 2020</span><br>Project Title	: Humana.
+                                <br>Environment	: BigQuery, Cloud Storage, Cloud Composer.
+                                <br>Role		: GCP Data Engineer.
+                            </li>
+                            <li><span>Target Corporation USA | Datametica Sep 2019 – Dec 2019</span><br>Project Title	: Customer insight & Data Analytics. <br>Environment	: HDFS, Sqoop, Spark Core, Spark SQL, Scala, Oracle. <br>Role		: Big Data Engineer.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Aug 2023</span><br>Masters in  Computer Science at Texas Tech University.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- Blog Section -->
+<div id="blog">
+    <div class="container">
+        <h1 class="sub-title">My Blog</h1>
+        <div class="services-list">
+            <div class="Blog">
+                <i class="fa-brands fa-google"></i>
+                <h2>Google Cloud Platform</h2>
+                <p>GCP is a cloud</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div  class="Blog">
+                <i class="fa-solid fa-code"></i>
+                <h2>SQL</h2>
+                <p>SQL is a Lang</p>
+                <a href="notes/SQL_Notes.txt" target="_blank">Learn more</a>
+            </div>
+            <div  class="Blog">
+                <i class="fa-solid fa-code"></i>
+                <h2>Python</h2>
+                <p>Python is a Lng</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="Blog">
+                <i class="fa-solid fa-code"></i>
+                <h2>Pyspark</h2>
+                <p>Pyspark is a Framework</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>       
+    </div>
+</div>
+
+    <!-----------------certifications--------------------->
+    <div id="certifications">
+        <div class="container">
+            <div class="sub-title">My Certifications</div>
+            <div class="work-list">
+                <div class="Certifications">
+                    <img src="images/GCP_Certified_DataEngineer.png">
+                    <div class="layer">
+                        <h3>Google Cloud Certified Professional Data Engineer</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="Certifications">
+                    <img src="images/Associate_Cloud_Engineer.png">
+                    <div class="layer">
+                        <h3>Google Cloud Certified Associate Cloud Engineer</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="Certifications">
+                    <img src="images/Google_Cloud_Digital_Leader_certificate.png">
+                    <div class="layer">
+                        <h3>Google Cloud Certified Cloud Digital Engineer</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- Additional images will be hidden initially -->
+                <div class="Certifications additional" style="display: none;">
+                    <img src="images/Python_100_Exercises_Certificate.png">
+                    <div class="layer">
+                        <h3>Python 100 Exercises</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="Certifications additional" style="display: none;">
+                    <img src="images/Git_Gitlab_Certificate.png">
+                    <div class="layer">
+                        <h3>Git Gitlab</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+    <!-- "See more" and "See less" button -->
+    <a href="#" class="btn" id="seeMoreBtn" onclick="toggleAdditional(event)">See more</a>
+    <a href="#" class="btn" id="seeLessBtn" style="display: none;" onclick="toggleAdditional(event)">See less</a>
+    </div>
+
+    <script>
+    function toggleAdditional(event) {
+        event.preventDefault();
+        var additionalCertifications = document.querySelectorAll('.Certifications.additional');
+        var seeMoreBtn = document.getElementById('seeMoreBtn');
+        var seeLessBtn = document.getElementById('seeLessBtn');
+
+        additionalCertifications.forEach(function (certification) {
+            certification.style.display = (certification.style.display === 'none') ? 'block' : 'none';
+        });
+
+        seeMoreBtn.style.display = (seeMoreBtn.style.display === 'none') ? 'block' : 'none';
+        seeLessBtn.style.display = (seeLessBtn.style.display === 'none') ? 'block' : 'none';
+    }
+    </script>
+    </div>
+    
+
+    <!-----------------certifications
+    <div id="certifications">
+        <div class="container">
+            <div class="sub-title">My Certifications</div>
+            <div class="work-list">
+                <div class="Certifications">
+                    <img src="images/GCP_Certified_DataEngineer.png">
+                    <div class="layer">
+                        <h3>Google Cloud Certified Professional Data Engineer</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="Certifications">
+                    <img src="images/Associate_Cloud_Engineer.png">
+                    <div class="layer">
+                        <h3>Google Cloud Certified Associate Cloud Engineer</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="Certifications">
+                    <img src="images/Google_Cloud_Digital_Leader_certificate.png">
+                    <div class="layer">
+                        <h3>Google Cloud Certified Cloud Digital Engineer</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="Certifications">
+                    <img src="images/Python_100_Exercises_Certificate.png">
+                    <div class="layer">
+                        <h3>Python 100 Exercises</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="Certifications">
+                    <img src="images/Git_Gitlab_Certificate.png">
+                    <div class="layer">
+                        <h3>Git Gitlab</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div> ---------->
+
+    <!----------------contact-------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>gcpde75@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/mounikareddy14/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/mounikaprojects14" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+
+                    <a href="images/MounikaReddyBanda_GCP_DE.pdf" target="_blank" class="btn btn2">Download CV</br></a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169 Mounika Reddy Banda, GCP Data Engineer. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwAsMbcOw0vdaEUcIlTyZlPZbegJthV2kw1loyDJx7GqHq9qy4ww4Iuu0BvZtK59AQKHg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+ 
+    <!-- Go to Top Button 
+    <button onclick="goToTop()" id="goToTopBtn" title="Go to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Function to scroll to the top of the page
+        function goToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+
+        // Show/hide the "Go to Top" button based on the scroll position
+        window.onscroll = function () {
+            var btn = document.getElementById("goToTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    </script> -->
+
+</body>
+
+</html>
