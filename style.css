@@ -157,6 +157,7 @@ nav ul li a:hover::after{
 }
 
 /*------------------services--------------------*/
+
 #blog{
     padding: 30px 0;
 }
@@ -200,6 +201,7 @@ nav ul li a:hover::after{
     background: #ff004f;
     transform: translate(-10px);
 }
+
 
 /*------------certifications----------------*/
 #certifications{
@@ -263,13 +265,13 @@ nav ul li a:hover::after{
     text-align: center;
 }
 
-.Certifications:hover img{
+/*.Certifications:hover img{
     transform: scale(1.1);
 }
 
 .Certifications:hover .layer{
     height: 100%;
-}
+}*/
 
 .btn{
     display: block;
